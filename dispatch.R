@@ -45,7 +45,7 @@ plot_and_save_dispatch <- function(df_chart,
     # clustered bars
     cbar          = plot_cbar(df_chart, width, height, base_size, ofile, th, palette_fill,
                               title = title, subtitle = subtitle, annotations = annotations),
-    chbar         = plot_hbar(df_chart, width, height, base_size, ofile, th, palette_fill,
+    chbar         = plot_chbar(df_chart, width, height, base_size, ofile, th, palette_fill,
                               title = title, subtitle = subtitle, annotations = annotations),
 
     # stacked bars
