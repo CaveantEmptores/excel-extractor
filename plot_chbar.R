@@ -20,7 +20,7 @@ plot_hbar <- function(df, width = 8, height = 5, base_size = 12,
                        wrap_chars(th$wrap_title_chars_base, width))
   sub <- wrap_to_lines(subtitle, wrap_chars(th$wrap_subtitle_chars_base, width))
 
-  if (is.null(palette_fill)) palette_fill <- auto_palettes_for_chart(df, "hbar")$fill
+  if (is.null(palette_fill)) palette_fill <- auto_palettes_for_chart(df, "chbar")$fill
 
   n_leg <- dplyr::n_distinct(df_bar$Series)
   leg   <- legend_layout(n_leg, width, height)
